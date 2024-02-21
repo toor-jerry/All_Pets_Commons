@@ -68,7 +68,8 @@ public struct GenImageSize: ViewModifier {
     }
 }
 
-public struct NavigationBarModifier: ViewModifier {
+// MARK: - GenNavigationBar
+public struct GenNavigationBar: ViewModifier {
     
     var backgroundColor: UIColor?
     var titleColor: UIColor?

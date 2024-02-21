@@ -13,7 +13,7 @@ extension View {
     }
     
     func navigationBarColor(backgroundColor: UIColor?, titleColor: UIColor?) -> some View {
-        self.modifier(NavigationBarModifier(backgroundColor: backgroundColor, titleColor: titleColor))
+        self.modifier(GenNavigationBar(backgroundColor: backgroundColor, titleColor: titleColor))
     }
     
     func alignAsBadge(withRatio ratio: CGFloat = 0.8,
