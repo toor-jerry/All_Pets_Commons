@@ -17,6 +17,7 @@ struct ContentView: View {
                 GenImageSizeExample()
                 GenNavigationBarModifierExample()
                 GenCornerRadiusStyleExample()
+                GenTextStylePrincipalExample()
             }
         }
         .font(.title2)
@@ -29,8 +30,15 @@ struct CopyTextViewCustom: View {
     var className: String
     var params: String? = nil
     
+    init(className: String, params: String? = nil) {
+        self.className = className
+        if let params = params {
+            self.params = "(\(params))"
+        }
+    }
+    
     var body: some View {
-        CopyTextView(".modifier(\(className)\(params ?? "")")
+        CopyTextView(".modifier(\(className)\(params ?? ""))")
     }
 }
 

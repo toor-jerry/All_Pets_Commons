@@ -19,7 +19,7 @@ struct GenCornerRadiusStyleExample: View {
                 
                 VStack {
                     
-                    CopyTextViewCustom(className: className, params: "(radius: 10, corners: .allCorners)")
+                    CopyTextViewCustom(className: className, params: "radius: 10, corners: .allCorners")
                     
                     Spacer()
                     Divider()

@@ -17,6 +17,7 @@
 		DB43994D2B86B62D009B8004 /* GenImageSizeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43994C2B86B62D009B8004 /* GenImageSizeExample.swift */; };
 		DB43994F2B86B8CE009B8004 /* GenNavigationBarModifierExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43994E2B86B8CE009B8004 /* GenNavigationBarModifierExample.swift */; };
 		DB4399512B86BD0C009B8004 /* GenCornerRadiusStyleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4399502B86BD0C009B8004 /* GenCornerRadiusStyleExample.swift */; };
+		DB4399532B86C196009B8004 /* GenTextStylePrincipalExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4399522B86C196009B8004 /* GenTextStylePrincipalExample.swift */; };
 		DBC3F7582B8661FC00A4AE10 /* AllPetsCommons in Frameworks */ = {isa = PBXBuildFile; productRef = DBC3F7572B8661FC00A4AE10 /* AllPetsCommons */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		DB43994C2B86B62D009B8004 /* GenImageSizeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenImageSizeExample.swift; sourceTree = "<group>"; };
 		DB43994E2B86B8CE009B8004 /* GenNavigationBarModifierExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenNavigationBarModifierExample.swift; sourceTree = "<group>"; };
 		DB4399502B86BD0C009B8004 /* GenCornerRadiusStyleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenCornerRadiusStyleExample.swift; sourceTree = "<group>"; };
+		DB4399522B86C196009B8004 /* GenTextStylePrincipalExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenTextStylePrincipalExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				DB43994C2B86B62D009B8004 /* GenImageSizeExample.swift */,
 				DB43994E2B86B8CE009B8004 /* GenNavigationBarModifierExample.swift */,
 				DB4399502B86BD0C009B8004 /* GenCornerRadiusStyleExample.swift */,
+				DB4399522B86C196009B8004 /* GenTextStylePrincipalExample.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				DB43994B2B86B257009B8004 /* GenProfileImageExample.swift in Sources */,
 				DB4399492B86B175009B8004 /* GenAligmentViewExample.swift in Sources */,
 				DB1932B22B85B0D8005E74E8 /* All_Pets_CommonsApp.swift in Sources */,
+				DB4399532B86C196009B8004 /* GenTextStylePrincipalExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

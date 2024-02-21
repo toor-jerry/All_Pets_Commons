@@ -131,46 +131,8 @@ public struct GenCornerRadiusStyle: ViewModifier {
     }
 }
 
-// - textProfileBackground
-
-public struct textProfileBackground_example: View {
-    
-    public var body: some View {
-        VStack {
-            Text("Example on text")
-                .modifier(textStylePrincipal())
-        }
-        .background(.black)
-    }
-}
-
-public struct textProfileBackground: ViewModifier {
-    
-    public func body(content: Content) -> some View {
-        content
-            .cornerRadius(50)
-            .padding(.all, 4)
-            .frame(width: 40, height: 40)
-            .background(Color.black.opacity(0.2))
-            .aspectRatio(contentMode: .fill)
-            .clipShape(Circle())
-    }
-}
-
-// - textStylePrincipal
-
-public struct textStylePrincipal_example: View {
-    
-    public var body: some View {
-        VStack {
-            Text("Example on text")
-                .modifier(textStylePrincipal())
-        }
-        .background(.black)
-    }
-}
-
-public struct textStylePrincipal: ViewModifier {
+// MARK: - GenTextStylePrincipal
+public struct GenTextStylePrincipal: ViewModifier {
     
     var color: Color
     var setWidth: Bool
@@ -200,6 +162,19 @@ public struct textStylePrincipal: ViewModifier {
     }
 }
 
+
+public struct textProfileBackground: ViewModifier {
+    
+    public func body(content: Content) -> some View {
+        content
+            .cornerRadius(50)
+            .padding(.all, 4)
+            .frame(width: 40, height: 40)
+            .background(Color.black.opacity(0.2))
+            .aspectRatio(contentMode: .fill)
+            .clipShape(Circle())
+    }
+}
 
 // -
 
@@ -332,20 +307,5 @@ public struct shadowStyle1: ViewModifier {
     public func body(content: Content) -> some View {
         content
             .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
-    }
-}
-
-#Preview {
-    VStack {
-        textStylePrincipal_example()
-            .padding()
-        inputStylePrincipal_example()
-            .padding()
-        shadowStyle1_example()
-            .padding()
-        buttonPrincipal_example()
-            .padding()
-        buttonSecundary_example()
-            .padding()
     }
 }
