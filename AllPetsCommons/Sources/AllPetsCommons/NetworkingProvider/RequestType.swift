@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RequestType {
+public struct RequestType {
     var strUrl: String
     var method: MethodRequest
     var httpBody: Data?
@@ -33,7 +33,7 @@ extension RequestType {
     }
 }
 
-enum MethodRequest {
+public enum MethodRequest {
     case GET, PUT, POST, DELETE
 
     func getTypeResponse() -> String {
@@ -50,7 +50,7 @@ enum MethodRequest {
     }
 }
 
-struct HeaderCustom {
+public struct HeaderCustom {
     var value: String
     var forHTTPHeaderField: String
 }
