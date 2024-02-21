@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension ObservableObject {
+public extension ObservableObject {
 
     func setTheardMain(work: @escaping () -> Void) {
         DispatchQueue.main.async {

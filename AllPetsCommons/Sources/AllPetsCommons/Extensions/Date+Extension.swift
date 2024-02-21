@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
     
     mutating func addHour(_ hour: Int = 1) -> Date {
         return Calendar.current.date(byAdding: .hour, value: hour, to: self)!
