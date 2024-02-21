@@ -20,9 +20,6 @@ struct GenNavigationBarModifierExample: View {
                     Spacer()
                     Divider()
                     VStack {
-                        Text("Default:")
-                        self.navigationTitle("Title custom")
-                        self.modifier(GenNavigationBar(backgroundColor: .green, titleColor: .red))
                         Spacer()
                     }
                     .font(.title)
@@ -30,6 +27,8 @@ struct GenNavigationBarModifierExample: View {
                 }
                 .background(Color.backgroundPrincipal)
             }
+            .navigationTitle("Title custom")
+            .modifier(GenNavigationBar(backgroundColor: .green, titleColor: .red))
         } label: {
             Text(className)
         }
