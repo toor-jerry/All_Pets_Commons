@@ -7,8 +7,11 @@
 
 import SwiftUI
 
-struct Loader: View {
-    var body: some View {
+public struct Loader: View {
+    
+    public init() {}
+    
+    public var body: some View {
         VStack {
             Spacer()
             HStack {

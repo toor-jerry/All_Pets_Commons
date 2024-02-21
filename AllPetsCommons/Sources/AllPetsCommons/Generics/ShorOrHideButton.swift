@@ -7,11 +7,13 @@
 
 import SwiftUI
 
-struct ShorOrHideButton: View {
+public struct ShorOrHideButton: View {
     
     @Binding var showPassword: Bool
     
-    var body: some View {
+    public init() {}
+    
+    public var body: some View {
         Button(action: {
             showPassword.toggle()
         }) {
