@@ -5,7 +5,7 @@
 //  Copyright © 2023 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-extension Array {
+public extension Array {
     subscript (safe index: Int) -> Element? {
         return (index < count && index >= .zero) ? self[index] : nil
     }

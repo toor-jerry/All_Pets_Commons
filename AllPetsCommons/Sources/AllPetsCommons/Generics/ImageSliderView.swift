@@ -33,7 +33,7 @@ public struct ImageSliderView: View {
                     if let image = images[safe: index] {
                         switch image.type {
                         case .system:
-                            Image(.logoVeterian)
+                            Image(.empyStateIcon)
                                 .resizable()
                                 .modifier(imageSize())
                         case .network:

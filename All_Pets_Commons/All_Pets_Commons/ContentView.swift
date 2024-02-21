@@ -11,7 +11,6 @@ import AllPetsCommons
 struct ContentView: View {
     var body: some View {
         VStack {
-            ImageSliderView(images: [ImageSlider(image: "", type: .network)], cornerRadius: 20, heightImage: 200)
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(Color.bluePrincipal)
