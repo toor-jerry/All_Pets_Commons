@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// MARK: - GenAligmentView
 public struct GenAligmentView: ViewModifier {
     
     var aligment: TextAlignment
@@ -28,6 +29,7 @@ public struct GenAligmentView: ViewModifier {
     }
 }
 
+// MARK: - GenProfileImage
 public struct GenProfileImage: ViewModifier {
 
     let size: CGFloat
@@ -47,6 +49,7 @@ public struct GenProfileImage: ViewModifier {
     }
 }
 
+// MARK: - GenImageSize
 public struct GenImageSize: ViewModifier {
     
     var size: CGFloat
