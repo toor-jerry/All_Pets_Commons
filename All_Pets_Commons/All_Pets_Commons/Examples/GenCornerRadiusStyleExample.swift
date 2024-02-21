@@ -14,11 +14,16 @@ struct GenCornerRadiusStyleExample: View {
     
     var body: some View {
         NavigationLink {
+            
             ScrollView {
+                
                 VStack {
-                    CopyTextView(".modifier(\(className)(radius: 10, corners: .allCorners))")
+                    
+                    CopyTextViewCustom(className: className, params: "(radius: 10, corners: .allCorners)")
+                    
                     Spacer()
                     Divider()
+                    
                     VStack {
                         Text("Custom:")
                         Image(systemName: "photo.fill")
@@ -28,6 +33,8 @@ struct GenCornerRadiusStyleExample: View {
                         Spacer()
                     }
                     .font(.title)
+                    
+                    
                     Spacer()
                 }
                 .background(Color.backgroundPrincipal)

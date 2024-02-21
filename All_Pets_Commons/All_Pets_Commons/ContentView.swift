@@ -24,6 +24,16 @@ struct ContentView: View {
     }
 }
 
+struct CopyTextViewCustom: View {
+    
+    var className: String
+    var params: String? = nil
+    
+    var body: some View {
+        CopyTextView(".modifier(\(className)\(params ?? "")")
+    }
+}
+
 #Preview {
     ContentView()
 }
