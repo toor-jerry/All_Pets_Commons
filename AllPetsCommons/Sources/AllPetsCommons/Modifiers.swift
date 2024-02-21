@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct AligmentView: ViewModifier {
+public struct GenAligmentView: ViewModifier {
     
     var aligment: TextAlignment
     
@@ -28,7 +28,7 @@ public struct AligmentView: ViewModifier {
     }
 }
 
-public struct profileImage: ViewModifier {
+public struct GenProfileImage: ViewModifier {
 
     let size: CGFloat
     
