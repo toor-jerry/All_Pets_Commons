@@ -11,7 +11,9 @@ public struct ShorOrHideButton: View {
     
     @Binding var showPassword: Bool
     
-    public init() {}
+    public init(showPassword: Binding<Bool>) {
+        self._showPassword = showPassword
+    }
     
     public var body: some View {
         Button(action: {
