@@ -1,8 +1,17 @@
+//  ObservableObject+Extension.swift
+//  All_Pets
 //
-//  File.swift
-//  
-//
-//  Created by Gerardo Bautista Castaneda on 21/02/24.
+//  Created by Gerardo Bautista Castañeda on 09/08/23.
+//  Copyright © 2023 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import Foundation
+
+extension ObservableObject {
+
+    func setTheardMain(work: @escaping () -> Void) {
+        DispatchQueue.main.async {
+            work()
+        }
+    }
+}
