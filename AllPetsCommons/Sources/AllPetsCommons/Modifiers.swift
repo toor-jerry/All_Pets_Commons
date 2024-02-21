@@ -7,11 +7,15 @@
 
 import SwiftUI
 
-struct AligmentView: ViewModifier {
+public struct AligmentView: ViewModifier {
     
     var aligment: TextAlignment
     
-    func body(content: Content) -> some View {
+    public init(aligment: TextAlignment) {
+        self.aligment = aligment
+    }
+    
+    public func body(content: Content) -> some View {
         HStack {
             if aligment == .trailing {
                 Spacer()
@@ -24,11 +28,15 @@ struct AligmentView: ViewModifier {
     }
 }
 
-struct profileImage: ViewModifier {
+public struct profileImage: ViewModifier {
 
     let size: CGFloat
+    
+    public init(size: CGFloat) {
+        self.size = size
+    }
 
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .cornerRadius(50)
             .frame(width: size, height: size)
@@ -39,17 +47,17 @@ struct profileImage: ViewModifier {
     }
 }
 
-struct imageSize: ViewModifier {
+public struct imageSize: ViewModifier {
     
     var size: CGFloat
     var padding: CGFloat
     
-    init(size: CGFloat = 40, padding: CGFloat = 4) {
+    public init(size: CGFloat = 40, padding: CGFloat = 4) {
         self.size = size
         self.padding = padding
     }
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .frame(width: size, height: size)
             .aspectRatio(contentMode: .fill)
@@ -57,12 +65,12 @@ struct imageSize: ViewModifier {
     }
 }
 
-struct NavigationBarModifier: ViewModifier {
+public struct NavigationBarModifier: ViewModifier {
     
     var backgroundColor: UIColor?
     var titleColor: UIColor?
     
-    init(backgroundColor: UIColor? = UIColor(Color(.backgroundPrincipal)),
+    public init(backgroundColor: UIColor? = UIColor(Color.backgroundPrincipal),
          titleColor: UIColor? = .black) {
         
         self.backgroundColor = backgroundColor
@@ -77,7 +85,7 @@ struct NavigationBarModifier: ViewModifier {
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
     }
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         ZStack {
             content
             VStack {
@@ -92,9 +100,14 @@ struct NavigationBarModifier: ViewModifier {
     }
 }
 
-struct CornerRadiusStyle: ViewModifier {
+public struct CornerRadiusStyle: ViewModifier {
     var radius: CGFloat
     var corners: UIRectCorner
+    
+    public init(radius: CGFloat, corners: UIRectCorner) {
+        self.radius = radius
+        self.corners = corners
+    }
     
     struct CornerRadiusShape: Shape {
         
@@ -107,7 +120,7 @@ struct CornerRadiusStyle: ViewModifier {
         }
     }
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .clipShape(CornerRadiusShape(radius: radius, corners: corners))
     }
@@ -115,9 +128,9 @@ struct CornerRadiusStyle: ViewModifier {
 
 // - textProfileBackground
 
-struct textProfileBackground_example: View {
+public struct textProfileBackground_example: View {
     
-    var body: some View {
+    public var body: some View {
         VStack {
             Text("Example on text")
                 .modifier(textStylePrincipal())
@@ -126,9 +139,9 @@ struct textProfileBackground_example: View {
     }
 }
 
-struct textProfileBackground: ViewModifier {
+public struct textProfileBackground: ViewModifier {
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .cornerRadius(50)
             .padding(.all, 4)
@@ -141,9 +154,9 @@ struct textProfileBackground: ViewModifier {
 
 // - textStylePrincipal
 
-struct textStylePrincipal_example: View {
+public struct textStylePrincipal_example: View {
     
-    var body: some View {
+    public var body: some View {
         VStack {
             Text("Example on text")
                 .modifier(textStylePrincipal())
@@ -152,19 +165,19 @@ struct textStylePrincipal_example: View {
     }
 }
 
-struct textStylePrincipal: ViewModifier {
+public struct textStylePrincipal: ViewModifier {
     
     var color: Color
     var setWidth: Bool
     var fontSize: Font
     
-    init(color: Color = .white, setWidth: Bool = true, fontSize: Font = .title3) {
+    public init(color: Color = .white, setWidth: Bool = true, fontSize: Font = .title3) {
         self.color = color
         self.setWidth = setWidth
         self.fontSize = fontSize
     }
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         if setWidth {
             content
                 .font(fontSize)
@@ -185,9 +198,9 @@ struct textStylePrincipal: ViewModifier {
 
 // -
 
-struct textStyleSubtitle: ViewModifier {
+public struct textStyleSubtitle: ViewModifier {
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .font(.title3)
             .fontWeight(.bold)
@@ -195,9 +208,9 @@ struct textStyleSubtitle: ViewModifier {
     }
 }
 
-struct textStyleTitle2: ViewModifier {
+public struct textStyleTitle2: ViewModifier {
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .font(.title2)
             .fontWeight(.bold)
@@ -207,26 +220,26 @@ struct textStyleTitle2: ViewModifier {
 
 // - buttonPrincipal
 
-struct buttonPrincipal_example: View {
+public struct buttonPrincipal_example: View {
     
-    var body: some View {
+    public var body: some View {
         Button("Example buttonPrincipal", action: {})
             .modifier(buttonPrincipal())
     }
 }
 
-struct buttonPrincipal: ViewModifier {
+public struct buttonPrincipal: ViewModifier {
     
     private var color: Color = Color(.bluePrincipal)
     var padding: CGFloat = 20.0
     var radius: CGFloat
-    init(padding: CGFloat = 20.0, _ color: Color = Color(.bluePrincipal), _ radius: CGFloat = 50.0) {
+    public init(padding: CGFloat = 20.0, _ color: Color = .bluePrincipal, _ radius: CGFloat = 50.0) {
         self.color = color
         self.padding = padding
         self.radius = radius
     }
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .padding(EdgeInsets(top: padding, leading: padding, bottom: padding, trailing: padding))
             .background(color)
@@ -237,9 +250,9 @@ struct buttonPrincipal: ViewModifier {
 
 // - buttonSecundary
 
-struct buttonSecundary_example: View {
+public struct buttonSecundary_example: View {
     
-    var body: some View {
+    public var body: some View {
         //        Button("Example buttonPrincipal", action: {})
         //            .modifier(buttonSecundary())
         Button(action: {}, label: {
@@ -252,9 +265,9 @@ struct buttonSecundary_example: View {
     }
 }
 
-struct buttonSecundary: ViewModifier {
+public struct buttonSecundary: ViewModifier {
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .font(.title3)
             .frame(height: 34)
@@ -268,9 +281,9 @@ struct buttonSecundary: ViewModifier {
 
 // - inputStylePrincipal
 
-struct inputStylePrincipal_example: View {
+public struct inputStylePrincipal_example: View {
     
-    var body: some View {
+    public var body: some View {
         VStack {
             Text("Example on text")
                 .modifier(inputStylePrincipal())
@@ -279,17 +292,17 @@ struct inputStylePrincipal_example: View {
     }
 }
 
-struct inputStylePrincipal: ViewModifier {
+public struct inputStylePrincipal: ViewModifier {
     
     var color: Color
     var lineWidth: Double
     
-    init(_ color: Color = Color(.bluePrincipal), _ lineWidth: Double = 4) {
+    public init(_ color: Color = .bluePrincipal, _ lineWidth: Double = 4) {
         self.color = color
         self.lineWidth = lineWidth
     }
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .font(.headline)
             .background(Color.white)
@@ -301,17 +314,17 @@ struct inputStylePrincipal: ViewModifier {
 
 // - shadowStyle1
 
-struct shadowStyle1_example: View {
+public struct shadowStyle1_example: View {
     
-    var body: some View {
+    public var body: some View {
         Button("Example shadow", action: { })
             .modifier(shadowStyle1())
     }
 }
 
-struct shadowStyle1: ViewModifier {
+public struct shadowStyle1: ViewModifier {
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
     }
@@ -331,4 +344,3 @@ struct shadowStyle1: ViewModifier {
             .padding()
     }
 }
-
