@@ -4,20 +4,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "Commons",
+    name: "AllPetsCommons",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "Commons",
-            targets: ["Commons"]),
+            name: "AllPetsCommons",
+            targets: ["AllPetsCommons"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "Commons"),
+            name: "AllPetsCommons"),
         .testTarget(
-            name: "CommonsTests",
-            dependencies: ["Commons"]),
+            name: "AllPetsCommonsTests",
+            dependencies: ["AllPetsCommons"]),
     ]
 )

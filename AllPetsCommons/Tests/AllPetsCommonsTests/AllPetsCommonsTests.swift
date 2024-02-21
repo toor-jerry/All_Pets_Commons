@@ -1,7 +1,7 @@
 import XCTest
-@testable import Commons
+@testable import AllPetsCommons
 
-final class CommonsTests: XCTestCase {
+final class AllPetsCommonsTests: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest
