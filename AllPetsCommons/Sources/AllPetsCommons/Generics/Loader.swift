@@ -16,7 +16,7 @@ public struct Loader: View {
             Spacer()
             HStack {
                 Spacer()
-                ProgressView("MsgLoader")
+                ProgressView(String(localized: "MsgLoader", bundle: .module))
                     .scaleEffect(2)
                 Spacer()
             }

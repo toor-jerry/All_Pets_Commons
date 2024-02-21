@@ -11,7 +11,6 @@ import AllPetsCommons
 struct ContentView: View {
     var body: some View {
         VStack {
-            Loader()
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(Color.bluePrincipal)
