@@ -14,6 +14,7 @@ struct ContentView: View {
             VStack(spacing: 20) {
                 GenAligmentViewExample()
                 GenProfileImageExample()
+                GenImageSizeExample()
             }
         }
         .font(.title2)

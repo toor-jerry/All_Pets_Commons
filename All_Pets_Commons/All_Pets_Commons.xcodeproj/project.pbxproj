@@ -14,6 +14,7 @@
 		DB1932CC2B85B180005E74E8 /* AllPetsCommons in Resources */ = {isa = PBXBuildFile; fileRef = DB1932CB2B85B180005E74E8 /* AllPetsCommons */; };
 		DB4399492B86B175009B8004 /* GenAligmentViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4399482B86B175009B8004 /* GenAligmentViewExample.swift */; };
 		DB43994B2B86B257009B8004 /* GenProfileImageExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43994A2B86B257009B8004 /* GenProfileImageExample.swift */; };
+		DB43994D2B86B62D009B8004 /* GenImageSizeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43994C2B86B62D009B8004 /* GenImageSizeExample.swift */; };
 		DBC3F7582B8661FC00A4AE10 /* AllPetsCommons in Frameworks */ = {isa = PBXBuildFile; productRef = DBC3F7572B8661FC00A4AE10 /* AllPetsCommons */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		DB1932CB2B85B180005E74E8 /* AllPetsCommons */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AllPetsCommons; path = ../../AllPetsCommons; sourceTree = "<group>"; };
 		DB4399482B86B175009B8004 /* GenAligmentViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenAligmentViewExample.swift; sourceTree = "<group>"; };
 		DB43994A2B86B257009B8004 /* GenProfileImageExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenProfileImageExample.swift; sourceTree = "<group>"; };
+		DB43994C2B86B62D009B8004 /* GenImageSizeExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenImageSizeExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				DB4399482B86B175009B8004 /* GenAligmentViewExample.swift */,
 				DB43994A2B86B257009B8004 /* GenProfileImageExample.swift */,
+				DB43994C2B86B62D009B8004 /* GenImageSizeExample.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB1932B42B85B0D8005E74E8 /* ContentView.swift in Sources */,
+				DB43994D2B86B62D009B8004 /* GenImageSizeExample.swift in Sources */,
 				DB43994B2B86B257009B8004 /* GenProfileImageExample.swift in Sources */,
 				DB4399492B86B175009B8004 /* GenAligmentViewExample.swift in Sources */,
 				DB1932B22B85B0D8005E74E8 /* All_Pets_CommonsApp.swift in Sources */,

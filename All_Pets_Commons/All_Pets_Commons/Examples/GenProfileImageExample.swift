@@ -15,7 +15,7 @@ struct GenProfileImageExample: View {
     var body: some View {
         NavigationLink {
             VStack {
-                CopyTextView(".modifier(\(className)(aligment: .leading))")
+                CopyTextView(".modifier(\(className)(size: 10))")
                 Spacer()
                 Divider()
                 VStack {

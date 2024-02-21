@@ -47,7 +47,7 @@ public struct GenProfileImage: ViewModifier {
     }
 }
 
-public struct imageSize: ViewModifier {
+public struct GenImageSize: ViewModifier {
     
     var size: CGFloat
     var padding: CGFloat

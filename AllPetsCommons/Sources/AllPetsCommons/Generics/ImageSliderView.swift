@@ -35,7 +35,7 @@ public struct ImageSliderView: View {
                         case .system:
                             Image(.empyStateIcon)
                                 .resizable()
-                                .modifier(imageSize())
+                                .modifier(GenImageSize())
                         case .network:
                             AsyncImage(url: URL(string: image.image)) { image in
                                 image
