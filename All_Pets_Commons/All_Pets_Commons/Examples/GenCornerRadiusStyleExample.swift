@@ -1,4 +1,4 @@
-//  GenImageSizeExample.swift
+//  GenCornerRadiusStyleExample.swift
 //  All_Pets_Commons
 //
 //  Created by Gerardo Bautista Castañeda on 21/02/24.
@@ -8,28 +8,23 @@
 import SwiftUI
 import AllPetsCommons
 
-struct GenImageSizeExample: View {
+struct GenCornerRadiusStyleExample: View {
     
-    let className = String(describing: GenImageSize.self)
+    let className = String(describing: GenCornerRadiusStyle.self)
     
     var body: some View {
         NavigationLink {
             ScrollView {
                 VStack {
-                    CopyTextView(".modifier(\(className)())")
+                    CopyTextView(".modifier(\(className)(radius: 10, corners: .allCorners))")
                     Spacer()
                     Divider()
                     VStack {
-                        Text("Default:")
+                        Text("Custom:")
                         Image(systemName: "photo.fill")
                             .resizable()
-                            .modifier(GenImageSize())
-                        
-                        Spacer()
-                        Text("Custom (size: 50, padding: 30):")
-                        Image(systemName: "photo.fill")
-                            .resizable()
-                            .modifier(GenImageSize(size: 50, padding: 30))
+                            .frame(width: 50, height: 50)
+                            .modifier(GenCornerRadiusStyle(radius: 10, corners: .allCorners))
                         Spacer()
                     }
                     .font(.title)

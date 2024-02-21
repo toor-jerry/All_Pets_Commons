@@ -16,6 +16,7 @@ struct ContentView: View {
                 GenProfileImageExample()
                 GenImageSizeExample()
                 GenNavigationBarModifierExample()
+                GenCornerRadiusStyleExample()
             }
         }
         .font(.title2)

@@ -27,7 +27,7 @@ struct GenNavigationBarModifierExample: View {
                 }
                 .background(Color.backgroundPrincipal)
             }
-            .navigationTitle("Title custom")
+            .navigationTitle(className)
             .modifier(GenNavigationBar(backgroundColor: .green, titleColor: .red))
         } label: {
             Text(className)

@@ -104,7 +104,8 @@ public struct GenNavigationBar: ViewModifier {
     }
 }
 
-public struct CornerRadiusStyle: ViewModifier {
+// MARK: - GenCornerRadiusStyle
+public struct GenCornerRadiusStyle: ViewModifier {
     var radius: CGFloat
     var corners: UIRectCorner
     

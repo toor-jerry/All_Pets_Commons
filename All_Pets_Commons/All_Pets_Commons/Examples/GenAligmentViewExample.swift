@@ -30,6 +30,7 @@ struct GenAligmentViewExample: View {
                 .font(.title)
                 Spacer()
             }
+            .navigationTitle(className)
         } label: {
             Text(className)
         }

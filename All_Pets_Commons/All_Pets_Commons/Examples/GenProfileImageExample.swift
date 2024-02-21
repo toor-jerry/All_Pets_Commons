@@ -26,6 +26,7 @@ struct GenProfileImageExample: View {
                 .font(.title)
                 Spacer()
             }
+            .navigationTitle(className)
         } label: {
             Text(className)
         }
