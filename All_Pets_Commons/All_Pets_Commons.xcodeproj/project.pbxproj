@@ -11,6 +11,7 @@
 		DB1932B42B85B0D8005E74E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1932B32B85B0D8005E74E8 /* ContentView.swift */; };
 		DB1932B62B85B0D9005E74E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1932B52B85B0D9005E74E8 /* Assets.xcassets */; };
 		DB1932B92B85B0D9005E74E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB1932B82B85B0D9005E74E8 /* Preview Assets.xcassets */; };
+		DB1932CC2B85B180005E74E8 /* AllPetsCommons in Resources */ = {isa = PBXBuildFile; fileRef = DB1932CB2B85B180005E74E8 /* AllPetsCommons */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DB1932B32B85B0D8005E74E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB1932B52B85B0D9005E74E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB1932B82B85B0D9005E74E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB1932CB2B85B180005E74E8 /* AllPetsCommons */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AllPetsCommons; path = ../../AllPetsCommons; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		DB1932B02B85B0D8005E74E8 /* All_Pets_Commons */ = {
 			isa = PBXGroup;
 			children = (
+				DB1932CB2B85B180005E74E8 /* AllPetsCommons */,
 				DB1932B12B85B0D8005E74E8 /* All_Pets_CommonsApp.swift */,
 				DB1932B32B85B0D8005E74E8 /* ContentView.swift */,
 				DB1932B52B85B0D9005E74E8 /* Assets.xcassets */,
@@ -127,6 +130,7 @@
 			files = (
 				DB1932B92B85B0D9005E74E8 /* Preview Assets.xcassets in Resources */,
 				DB1932B62B85B0D9005E74E8 /* Assets.xcassets in Resources */,
+				DB1932CC2B85B180005E74E8 /* AllPetsCommons in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
