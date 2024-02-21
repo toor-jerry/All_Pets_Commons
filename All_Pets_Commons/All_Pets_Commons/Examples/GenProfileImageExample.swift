@@ -1,4 +1,4 @@
-//  GenAligmentViewExample.swift
+//  GenProfileImageExample.swift
 //  All_Pets_Commons
 //
 //  Created by Gerardo Bautista Castañeda on 21/02/24.
@@ -8,9 +8,9 @@
 import SwiftUI
 import AllPetsCommons
 
-struct GenAligmentViewExample: View {
+struct GenProfileImageExample: View {
     
-    let className = String(describing: GenAligmentView.self)
+    let className = String(describing: GenProfileImage.self)
     
     var body: some View {
         NavigationLink {
@@ -18,14 +18,10 @@ struct GenAligmentViewExample: View {
                 CopyTextView(".modifier(\(className)(aligment: .leading))")
                 Spacer()
                 Divider()
-                VStack(spacing: 40) {
-                    
-                    Text(".leading")
-                        .modifier(GenAligmentView(aligment: .leading))
-                    Text(".trailing")
-                        .modifier(GenAligmentView(aligment: .trailing))
-                    Text(".center")
-                        .modifier(GenAligmentView(aligment: .center))
+                VStack {
+                    Image(systemName: "photo.fill")
+                        .resizable()
+                        .modifier(GenProfileImage(size: 80))
                 }
                 .font(.title)
                 Spacer()

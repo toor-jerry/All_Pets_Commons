@@ -11,7 +11,10 @@ import AllPetsCommons
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-            GenAligmentViewExample()
+            VStack(spacing: 20) {
+                GenAligmentViewExample()
+                GenProfileImageExample()
+            }
         }
         .font(.title2)
         .padding()
