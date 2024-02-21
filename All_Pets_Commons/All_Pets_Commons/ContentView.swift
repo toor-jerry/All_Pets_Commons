@@ -18,6 +18,7 @@ struct ContentView: View {
                 GenNavigationBarModifierExample()
                 GenCornerRadiusStyleExample()
                 GenTextStylePrincipalExample()
+                GenTextProfileBackgroundExample()
             }
         }
         .font(.title2)

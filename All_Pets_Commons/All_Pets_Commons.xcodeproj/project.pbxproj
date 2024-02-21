@@ -18,6 +18,7 @@
 		DB43994F2B86B8CE009B8004 /* GenNavigationBarModifierExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43994E2B86B8CE009B8004 /* GenNavigationBarModifierExample.swift */; };
 		DB4399512B86BD0C009B8004 /* GenCornerRadiusStyleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4399502B86BD0C009B8004 /* GenCornerRadiusStyleExample.swift */; };
 		DB4399532B86C196009B8004 /* GenTextStylePrincipalExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4399522B86C196009B8004 /* GenTextStylePrincipalExample.swift */; };
+		DB4399552B86C562009B8004 /* GenTextProfileBackgroundExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4399542B86C562009B8004 /* GenTextProfileBackgroundExample.swift */; };
 		DBC3F7582B8661FC00A4AE10 /* AllPetsCommons in Frameworks */ = {isa = PBXBuildFile; productRef = DBC3F7572B8661FC00A4AE10 /* AllPetsCommons */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		DB43994E2B86B8CE009B8004 /* GenNavigationBarModifierExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenNavigationBarModifierExample.swift; sourceTree = "<group>"; };
 		DB4399502B86BD0C009B8004 /* GenCornerRadiusStyleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenCornerRadiusStyleExample.swift; sourceTree = "<group>"; };
 		DB4399522B86C196009B8004 /* GenTextStylePrincipalExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenTextStylePrincipalExample.swift; sourceTree = "<group>"; };
+		DB4399542B86C562009B8004 /* GenTextProfileBackgroundExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenTextProfileBackgroundExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				DB43994E2B86B8CE009B8004 /* GenNavigationBarModifierExample.swift */,
 				DB4399502B86BD0C009B8004 /* GenCornerRadiusStyleExample.swift */,
 				DB4399522B86C196009B8004 /* GenTextStylePrincipalExample.swift */,
+				DB4399542B86C562009B8004 /* GenTextProfileBackgroundExample.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB4399512B86BD0C009B8004 /* GenCornerRadiusStyleExample.swift in Sources */,
+				DB4399552B86C562009B8004 /* GenTextProfileBackgroundExample.swift in Sources */,
 				DB43994F2B86B8CE009B8004 /* GenNavigationBarModifierExample.swift in Sources */,
 				DB1932B42B85B0D8005E74E8 /* ContentView.swift in Sources */,
 				DB43994D2B86B62D009B8004 /* GenImageSizeExample.swift in Sources */,

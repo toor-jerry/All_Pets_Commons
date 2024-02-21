@@ -162,8 +162,10 @@ public struct GenTextStylePrincipal: ViewModifier {
     }
 }
 
-
-public struct textProfileBackground: ViewModifier {
+// MARK: - GenTextProfileBackground
+public struct GenTextProfileBackground: ViewModifier {
+    
+    public init() { }
     
     public func body(content: Content) -> some View {
         content
