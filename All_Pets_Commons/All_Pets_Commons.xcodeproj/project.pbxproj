@@ -24,6 +24,7 @@
 		DB43995B2B86CA67009B8004 /* GenButtonSecundaryExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43995A2B86CA67009B8004 /* GenButtonSecundaryExample.swift */; };
 		DBC3F7582B8661FC00A4AE10 /* AllPetsCommons in Frameworks */ = {isa = PBXBuildFile; productRef = DBC3F7572B8661FC00A4AE10 /* AllPetsCommons */; };
 		DBDFE8892B86E94600AC9AE3 /* GenShadowStyleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDFE8882B86E94600AC9AE3 /* GenShadowStyleExample.swift */; };
+		DBDFE88B2B86EAC400AC9AE3 /* GenInputStylePrincipalExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDFE88A2B86EAC400AC9AE3 /* GenInputStylePrincipalExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		DB4399582B86C87C009B8004 /* GenButtonPrincipalExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenButtonPrincipalExample.swift; sourceTree = "<group>"; };
 		DB43995A2B86CA67009B8004 /* GenButtonSecundaryExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenButtonSecundaryExample.swift; sourceTree = "<group>"; };
 		DBDFE8882B86E94600AC9AE3 /* GenShadowStyleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenShadowStyleExample.swift; sourceTree = "<group>"; };
+		DBDFE88A2B86EAC400AC9AE3 /* GenInputStylePrincipalExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenInputStylePrincipalExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		DB4399472B86B166009B8004 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				DBDFE88A2B86EAC400AC9AE3 /* GenInputStylePrincipalExample.swift */,
 				DB4399482B86B175009B8004 /* GenAligmentViewExample.swift */,
 				DB43994A2B86B257009B8004 /* GenProfileImageExample.swift */,
 				DB43994C2B86B62D009B8004 /* GenImageSizeExample.swift */,
@@ -208,6 +211,7 @@
 				DB1932B22B85B0D8005E74E8 /* All_Pets_CommonsApp.swift in Sources */,
 				DB43995B2B86CA67009B8004 /* GenButtonSecundaryExample.swift in Sources */,
 				DB4399532B86C196009B8004 /* GenTextStylePrincipalExample.swift in Sources */,
+				DBDFE88B2B86EAC400AC9AE3 /* GenInputStylePrincipalExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,6 +34,11 @@ struct ContentView: View {
                 
                 Spacer()
                 Divider()
+                
+                GenInputStylePrincipalExample()
+                
+                Spacer()
+                Divider()
                 GenNavigationBarModifierExample()
             }
         }

@@ -240,35 +240,27 @@ public struct GenShadowStyle: ViewModifier {
     }
 }
 
-
-// - inputStylePrincipal
-
-public struct inputStylePrincipal_example: View {
-    
-    public var body: some View {
-        VStack {
-            Text("Example on text")
-                .modifier(inputStylePrincipal())
-        }
-        .background(.black)
-    }
-}
-
-public struct inputStylePrincipal: ViewModifier {
+// MARK: - GenInputStylePrincipal
+public struct GenInputStylePrincipal: ViewModifier {
     
     var color: Color
     var lineWidth: Double
+    var cornerRadius: Double
     
-    public init(_ color: Color = .bluePrincipal, _ lineWidth: Double = 4) {
+    public init(_ color: Color = .bluePrincipal,
+                _ lineWidth: Double = 4,
+                _ cornerRadius: Double = 15) {
         self.color = color
         self.lineWidth = lineWidth
+        self.cornerRadius = cornerRadius
     }
     
     public func body(content: Content) -> some View {
         content
             .font(.headline)
             .background(Color.white)
-            .overlay(RoundedRectangle(cornerRadius: 15)
+            .cornerRadius(cornerRadius, corners: .allCorners)
+            .overlay(RoundedRectangle(cornerRadius: cornerRadius)
                 .stroke(color, lineWidth: lineWidth))
             .foregroundColor(.black)
     }
