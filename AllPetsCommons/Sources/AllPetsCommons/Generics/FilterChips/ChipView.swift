@@ -33,7 +33,7 @@ public struct ChipView: View {
         }
         .foregroundColor(isSelected ? .white : .black)
         .fontWeight(.bold)
-        .modifier(buttonPrincipal(padding: 10, isSelected ? Color.bluePrincipal : .white))
+        .modifier(GenButtonPrincipal(padding: 10, color: isSelected ? Color.bluePrincipal : .white))
         .onTapGesture {
             isSelectedChip()
             if enableChangeColorOnSelect {

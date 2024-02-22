@@ -191,32 +191,13 @@ public struct GenTextStyleSubtitle: ViewModifier {
     }
 }
 
-public struct textStyleTitle2: ViewModifier {
-    
-    public func body(content: Content) -> some View {
-        content
-            .font(.title2)
-            .fontWeight(.bold)
-            .foregroundColor(.gray.opacity(0.8))
-    }
-}
-
-// - buttonPrincipal
-
-public struct buttonPrincipal_example: View {
-    
-    public var body: some View {
-        Button("Example buttonPrincipal", action: {})
-            .modifier(buttonPrincipal())
-    }
-}
-
-public struct buttonPrincipal: ViewModifier {
+// MARK: - GenButtonPrincipal
+public struct GenButtonPrincipal: ViewModifier {
     
     private var color: Color = Color(.bluePrincipal)
     var padding: CGFloat = 20.0
     var radius: CGFloat
-    public init(padding: CGFloat = 20.0, _ color: Color = .bluePrincipal, _ radius: CGFloat = 50.0) {
+    public init(padding: CGFloat = 20.0, color: Color = .bluePrincipal, radius: CGFloat = 50.0) {
         self.color = color
         self.padding = padding
         self.radius = radius
