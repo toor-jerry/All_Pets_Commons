@@ -45,7 +45,7 @@ public struct GenProfileImage: ViewModifier {
             .background(.white)
             .aspectRatio(contentMode: .fill)
             .clipShape(Circle())
-            .modifier(shadowStyle1())
+            .modifier(GenShadowStyle())
     }
 }
 
@@ -208,7 +208,7 @@ public struct GenButtonPrincipal: ViewModifier {
             .padding(EdgeInsets(top: padding, leading: padding, bottom: padding, trailing: padding))
             .background(color)
             .cornerRadius(radius)
-            .modifier(shadowStyle1())
+            .modifier(GenShadowStyle())
     }
 }
 
@@ -225,9 +225,21 @@ public struct GenButtonSecundary: ViewModifier {
             .background(.white)
             .foregroundColor(.black.opacity(0.5))
             .cornerRadius(8)
-            .modifier(shadowStyle1())
+            .modifier(GenShadowStyle())
     }
 }
+
+// MARK: - GenShadowStyle
+public struct GenShadowStyle: ViewModifier {
+    
+    public init() { }
+    
+    public func body(content: Content) -> some View {
+        content
+            .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
+    }
+}
+
 
 // - inputStylePrincipal
 
@@ -259,23 +271,5 @@ public struct inputStylePrincipal: ViewModifier {
             .overlay(RoundedRectangle(cornerRadius: 15)
                 .stroke(color, lineWidth: lineWidth))
             .foregroundColor(.black)
-    }
-}
-
-// - shadowStyle1
-
-public struct shadowStyle1_example: View {
-    
-    public var body: some View {
-        Button("Example shadow", action: { })
-            .modifier(shadowStyle1())
-    }
-}
-
-public struct shadowStyle1: ViewModifier {
-    
-    public func body(content: Content) -> some View {
-        content
-            .shadow(color: .black.opacity(0.25), radius: 2, x: 0, y: 4)
     }
 }

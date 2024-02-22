@@ -29,6 +29,11 @@ struct ContentView: View {
                 GenButtonSecundaryExample()
                 Spacer()
                 Divider()
+                
+                GenShadowStyleExample()
+                
+                Spacer()
+                Divider()
                 GenNavigationBarModifierExample()
             }
         }
