@@ -19,6 +19,7 @@ struct ContentView: View {
                 GenCornerRadiusStyleExample()
                 GenTextStylePrincipalExample()
                 GenTextProfileBackgroundExample()
+                GenTextStyleSubtitleExample()
             }
         }
         .font(.title2)
