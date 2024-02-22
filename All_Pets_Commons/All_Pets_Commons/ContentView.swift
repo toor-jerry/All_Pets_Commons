@@ -15,12 +15,21 @@ struct ContentView: View {
                 GenAligmentViewExample()
                 GenProfileImageExample()
                 GenImageSizeExample()
-                GenNavigationBarModifierExample()
                 GenCornerRadiusStyleExample()
+                Spacer()
+                Divider()
+                
                 GenTextStylePrincipalExample()
                 GenTextProfileBackgroundExample()
                 GenTextStyleSubtitleExample()
+                Spacer()
+                Divider()
+                
                 GenButtonPrincipalExample()
+                
+                Spacer()
+                Divider()
+                GenNavigationBarModifierExample()
             }
         }
         .font(.title2)
