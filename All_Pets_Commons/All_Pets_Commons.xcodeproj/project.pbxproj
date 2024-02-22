@@ -21,6 +21,7 @@
 		DB4399552B86C562009B8004 /* GenTextProfileBackgroundExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4399542B86C562009B8004 /* GenTextProfileBackgroundExample.swift */; };
 		DB4399572B86C726009B8004 /* GenTextStyleSubtitleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4399562B86C726009B8004 /* GenTextStyleSubtitleExample.swift */; };
 		DB4399592B86C87C009B8004 /* GenButtonPrincipalExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4399582B86C87C009B8004 /* GenButtonPrincipalExample.swift */; };
+		DB43995B2B86CA67009B8004 /* GenButtonSecundaryExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43995A2B86CA67009B8004 /* GenButtonSecundaryExample.swift */; };
 		DBC3F7582B8661FC00A4AE10 /* AllPetsCommons in Frameworks */ = {isa = PBXBuildFile; productRef = DBC3F7572B8661FC00A4AE10 /* AllPetsCommons */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		DB4399542B86C562009B8004 /* GenTextProfileBackgroundExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenTextProfileBackgroundExample.swift; sourceTree = "<group>"; };
 		DB4399562B86C726009B8004 /* GenTextStyleSubtitleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenTextStyleSubtitleExample.swift; sourceTree = "<group>"; };
 		DB4399582B86C87C009B8004 /* GenButtonPrincipalExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenButtonPrincipalExample.swift; sourceTree = "<group>"; };
+		DB43995A2B86CA67009B8004 /* GenButtonSecundaryExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenButtonSecundaryExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				DB4399542B86C562009B8004 /* GenTextProfileBackgroundExample.swift */,
 				DB4399562B86C726009B8004 /* GenTextStyleSubtitleExample.swift */,
 				DB4399582B86C87C009B8004 /* GenButtonPrincipalExample.swift */,
+				DB43995A2B86CA67009B8004 /* GenButtonSecundaryExample.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				DB43994B2B86B257009B8004 /* GenProfileImageExample.swift in Sources */,
 				DB4399492B86B175009B8004 /* GenAligmentViewExample.swift in Sources */,
 				DB1932B22B85B0D8005E74E8 /* All_Pets_CommonsApp.swift in Sources */,
+				DB43995B2B86CA67009B8004 /* GenButtonSecundaryExample.swift in Sources */,
 				DB4399532B86C196009B8004 /* GenTextStylePrincipalExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

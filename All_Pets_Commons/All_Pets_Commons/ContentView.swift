@@ -26,7 +26,7 @@ struct ContentView: View {
                 Divider()
                 
                 GenButtonPrincipalExample()
-                
+                GenButtonSecundaryExample()
                 Spacer()
                 Divider()
                 GenNavigationBarModifierExample()

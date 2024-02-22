@@ -212,24 +212,10 @@ public struct GenButtonPrincipal: ViewModifier {
     }
 }
 
-// - buttonSecundary
-
-public struct buttonSecundary_example: View {
+// MARK: - GenButtonSecundary
+public struct GenButtonSecundary: ViewModifier {
     
-    public var body: some View {
-        //        Button("Example buttonPrincipal", action: {})
-        //            .modifier(buttonSecundary())
-        Button(action: {}, label: {
-            Text("buttonSecundary")
-                .padding(.leading, 20)
-            Spacer()
-            Image(systemName: "rectangle.portrait.and.arrow.right")
-        })
-        .modifier(buttonSecundary())
-    }
-}
-
-public struct buttonSecundary: ViewModifier {
+    public init() { }
     
     public func body(content: Content) -> some View {
         content
