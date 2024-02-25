@@ -7,16 +7,23 @@ let package = Package(
     name: "AllPetsCommons",
     platforms: [.iOS(.v16)],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
+        // AllPets libraries
         .library(
             name: "AllPetsCommons",
             targets: ["AllPetsCommons"]),
+        .library(name: "AllPetsColors",
+                 targets: ["AllPetsColors"])
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
+        // AllPets libraries
         .target(
-            name: "AllPetsCommons"),
+            name: "AllPetsCommons",
+            dependencies: ["AllPetsColors"]),
+        .target(
+            name: "AllPetsColors",
+            path: "./Sources/AllPetsColors"),
+        
+        // Tests
         .testTarget(
             name: "AllPetsCommonsTests",
             dependencies: ["AllPetsCommons"]),
