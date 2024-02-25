@@ -20,6 +20,10 @@ let package = Package(
         .library(name: "AllPetsLocalizable",
                  targets: ["AllPetsLocalizable"])
     ],
+    dependencies: [
+        // Firebase
+        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", .branchItem("main")),
+    ],
     targets: [
         // AllPets libraries
         .target(
@@ -28,6 +32,11 @@ let package = Package(
                 "AllPetsColors",
                 "AllPetsImages",
                 "AllPetsFunctionalUtilities",
+                
+                // Firebase libraries
+                .product(name: "FirebaseAuth", package: "firebase-ios-sdk"),
+                .product(name: "FirebaseFirestoreSwift", package: "firebase-ios-sdk"),
+                .product(name: "FirebaseStorage", package: "firebase-ios-sdk")
             ]),
         
         .target(
