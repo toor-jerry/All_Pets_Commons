@@ -12,16 +12,25 @@ let package = Package(
             name: "AllPetsCommons",
             targets: ["AllPetsCommons"]),
         .library(name: "AllPetsColors",
-                 targets: ["AllPetsColors"])
+                 targets: ["AllPetsColors"]),
+        .library(name: "AllPetsImages",
+                 targets: ["AllPetsImages"])
     ],
     targets: [
         // AllPets libraries
         .target(
             name: "AllPetsCommons",
-            dependencies: ["AllPetsColors"]),
+            dependencies: [
+                "AllPetsColors",
+                "AllPetsImages"
+            ]),
+        
+            .target(
+                name: "AllPetsColors",
+                path: "./Sources/AllPetsColors"),
         .target(
-            name: "AllPetsColors",
-            path: "./Sources/AllPetsColors"),
+            name: "AllPetsImages",
+            path: "./Sources/AllPetsImages"),
         
         // Tests
         .testTarget(
