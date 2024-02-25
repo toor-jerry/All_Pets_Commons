@@ -7,6 +7,7 @@
 
 import SwiftUI
 import AllPetsImages
+import AllPetsFunctionalUtilities
 
 public struct ImageSliderView: View {
     

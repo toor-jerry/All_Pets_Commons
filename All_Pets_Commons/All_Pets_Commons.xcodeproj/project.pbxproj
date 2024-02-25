@@ -22,7 +22,7 @@
 		DB4399572B86C726009B8004 /* GenTextStyleSubtitleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4399562B86C726009B8004 /* GenTextStyleSubtitleExample.swift */; };
 		DB4399592B86C87C009B8004 /* GenButtonPrincipalExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4399582B86C87C009B8004 /* GenButtonPrincipalExample.swift */; };
 		DB43995B2B86CA67009B8004 /* GenButtonSecundaryExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB43995A2B86CA67009B8004 /* GenButtonSecundaryExample.swift */; };
-		DBC3F7582B8661FC00A4AE10 /* AllPetsCommons in Frameworks */ = {isa = PBXBuildFile; productRef = DBC3F7572B8661FC00A4AE10 /* AllPetsCommons */; };
+		DB7247052B8BEBB300A02202 /* AllPetsCommons in Frameworks */ = {isa = PBXBuildFile; productRef = DB7247042B8BEBB300A02202 /* AllPetsCommons */; };
 		DBDFE8892B86E94600AC9AE3 /* GenShadowStyleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDFE8882B86E94600AC9AE3 /* GenShadowStyleExample.swift */; };
 		DBDFE88B2B86EAC400AC9AE3 /* GenInputStylePrincipalExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDFE88A2B86EAC400AC9AE3 /* GenInputStylePrincipalExample.swift */; };
 /* End PBXBuildFile section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBC3F7582B8661FC00A4AE10 /* AllPetsCommons in Frameworks */,
+				DB7247052B8BEBB300A02202 /* AllPetsCommons in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +141,7 @@
 			);
 			name = All_Pets_Commons;
 			packageProductDependencies = (
-				DBC3F7572B8661FC00A4AE10 /* AllPetsCommons */,
+				DB7247042B8BEBB300A02202 /* AllPetsCommons */,
 			);
 			productName = All_Pets_Commons;
 			productReference = DB1932AE2B85B0D8005E74E8 /* All_Pets_Commons.app */;
@@ -417,7 +417,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DBC3F7572B8661FC00A4AE10 /* AllPetsCommons */ = {
+		DB7247042B8BEBB300A02202 /* AllPetsCommons */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AllPetsCommons;
 		};

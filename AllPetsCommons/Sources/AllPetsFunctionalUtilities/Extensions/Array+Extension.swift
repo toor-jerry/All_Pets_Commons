@@ -5,6 +5,8 @@
 //  Copyright © 2023 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
+import AllPetsLocalizable
+
 public extension Array {
     subscript (safe index: Int) -> Element? {
         return (index < count && index >= .zero) ? self[index] : nil
@@ -18,11 +20,11 @@ public extension Array {
         case 1:
             return array.first!.capitalized
         case 2:
-            return "\(array[0].capitalized) \(String(localized: "WordJoin", bundle: .module)) \(array[1].capitalized)"
+            return "\(array[0].capitalized) \(String.WordJoin) \(array[1].capitalized)"
         default:
             let lastElement = array.last!.capitalized
             let firstElements = array.dropLast().map { $0.capitalized }.joined(separator: ", ")
-            return "\(firstElements), \(String(localized: "WordJoin", bundle: .module)) \(lastElement)"
+            return "\(firstElements), \(String.WordJoin) \(lastElement)"
         }
     }
 }

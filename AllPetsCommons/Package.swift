@@ -14,7 +14,11 @@ let package = Package(
         .library(name: "AllPetsColors",
                  targets: ["AllPetsColors"]),
         .library(name: "AllPetsImages",
-                 targets: ["AllPetsImages"])
+                 targets: ["AllPetsImages"]),
+        .library(name: "AllPetsFunctionalUtilities",
+                 targets: ["AllPetsFunctionalUtilities"]),
+        .library(name: "AllPetsLocalizable",
+                 targets: ["AllPetsLocalizable"])
     ],
     targets: [
         // AllPets libraries
@@ -22,15 +26,24 @@ let package = Package(
             name: "AllPetsCommons",
             dependencies: [
                 "AllPetsColors",
-                "AllPetsImages"
+                "AllPetsImages",
+                "AllPetsFunctionalUtilities",
+//                "AllPetsLocalizable"
             ]),
         
-            .target(
+        .target(
                 name: "AllPetsColors",
                 path: "./Sources/AllPetsColors"),
         .target(
             name: "AllPetsImages",
             path: "./Sources/AllPetsImages"),
+        .target(
+            name: "AllPetsFunctionalUtilities",
+            dependencies: ["AllPetsLocalizable"],
+            path: "./Sources/AllPetsFunctionalUtilities"),
+        .target(
+            name: "AllPetsLocalizable",
+            path: "./Sources/AllPetsLocalizable"),
         
         // Tests
         .testTarget(
