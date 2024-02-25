@@ -28,7 +28,6 @@ let package = Package(
                 "AllPetsColors",
                 "AllPetsImages",
                 "AllPetsFunctionalUtilities",
-//                "AllPetsLocalizable"
             ]),
         
         .target(
