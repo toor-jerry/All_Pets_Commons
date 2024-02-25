@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import AllPetsImages
+import AllPetsFunctionalUtilities
 
 public struct ImageSliderView: View {
     
@@ -33,7 +35,7 @@ public struct ImageSliderView: View {
                     if let image = images[safe: index] {
                         switch image.type {
                         case .system:
-                            Image(.empyStateIcon)
+                            Image.empyStateIcon
                                 .resizable()
                                 .modifier(GenImageSize())
                         case .network:

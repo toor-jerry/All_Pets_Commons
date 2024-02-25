@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AllPetsColors
 
 // MARK: - GenAligmentView
 public struct GenAligmentView: ViewModifier {
@@ -194,7 +195,7 @@ public struct GenTextStyleSubtitle: ViewModifier {
 // MARK: - GenButtonPrincipal
 public struct GenButtonPrincipal: ViewModifier {
     
-    private var color: Color = Color(.bluePrincipal)
+    private var color: Color = Color.bluePrincipal
     var padding: CGFloat = 20.0
     var radius: CGFloat
     public init(padding: CGFloat = 20.0, color: Color = .bluePrincipal, radius: CGFloat = 50.0) {

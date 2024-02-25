@@ -7,16 +7,44 @@ let package = Package(
     name: "AllPetsCommons",
     platforms: [.iOS(.v16)],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
+        // AllPets libraries
         .library(
             name: "AllPetsCommons",
             targets: ["AllPetsCommons"]),
+        .library(name: "AllPetsColors",
+                 targets: ["AllPetsColors"]),
+        .library(name: "AllPetsImages",
+                 targets: ["AllPetsImages"]),
+        .library(name: "AllPetsFunctionalUtilities",
+                 targets: ["AllPetsFunctionalUtilities"]),
+        .library(name: "AllPetsLocalizable",
+                 targets: ["AllPetsLocalizable"])
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
+        // AllPets libraries
         .target(
-            name: "AllPetsCommons"),
+            name: "AllPetsCommons",
+            dependencies: [
+                "AllPetsColors",
+                "AllPetsImages",
+                "AllPetsFunctionalUtilities",
+            ]),
+        
+        .target(
+                name: "AllPetsColors",
+                path: "./Sources/AllPetsColors"),
+        .target(
+            name: "AllPetsImages",
+            path: "./Sources/AllPetsImages"),
+        .target(
+            name: "AllPetsFunctionalUtilities",
+            dependencies: ["AllPetsLocalizable"],
+            path: "./Sources/AllPetsFunctionalUtilities"),
+        .target(
+            name: "AllPetsLocalizable",
+            path: "./Sources/AllPetsLocalizable"),
+        
+        // Tests
         .testTarget(
             name: "AllPetsCommonsTests",
             dependencies: ["AllPetsCommons"]),
