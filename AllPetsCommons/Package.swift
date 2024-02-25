@@ -18,7 +18,9 @@ let package = Package(
         .library(name: "AllPetsFunctionalUtilities",
                  targets: ["AllPetsFunctionalUtilities"]),
         .library(name: "AllPetsLocalizable",
-                 targets: ["AllPetsLocalizable"])
+                 targets: ["AllPetsLocalizable"]),
+        .library(name: "AllPetsNetworkProvider",
+                 targets: ["AllPetsNetworkProvider"])
     ],
     dependencies: [
         // Firebase
@@ -31,12 +33,7 @@ let package = Package(
             dependencies: [
                 "AllPetsColors",
                 "AllPetsImages",
-                "AllPetsFunctionalUtilities",
-                
-                // Firebase libraries
-                .product(name: "FirebaseAuth", package: "firebase-ios-sdk"),
-                .product(name: "FirebaseFirestoreSwift", package: "firebase-ios-sdk"),
-                .product(name: "FirebaseStorage", package: "firebase-ios-sdk")
+                "AllPetsFunctionalUtilities"
             ]),
         
         .target(
@@ -52,6 +49,15 @@ let package = Package(
         .target(
             name: "AllPetsLocalizable",
             path: "./Sources/AllPetsLocalizable"),
+        .target(
+            name: "AllPetsNetworkProvider",
+            dependencies: [
+                // Firebase libraries
+                .product(name: "FirebaseAuth", package: "firebase-ios-sdk"),
+                .product(name: "FirebaseFirestoreSwift", package: "firebase-ios-sdk"),
+                .product(name: "FirebaseStorage", package: "firebase-ios-sdk")
+            ],
+            path: "./Sources/AllPetsNetworkProvider"),
         
         // Tests
         .testTarget(
