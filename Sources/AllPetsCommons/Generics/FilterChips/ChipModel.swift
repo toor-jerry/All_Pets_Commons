@@ -8,10 +8,10 @@
 import SwiftUI
 
 public struct ChipModel {
-    var isSelected: Bool
-    var id: UUID
-    let titleKey: String
-    let systemImage: String?
+    public var isSelected: Bool
+    public var id: UUID
+    public let titleKey: String
+    public let systemImage: String?
 
     public init(titleKey: String, isSelected: Bool = false, systemImage: String? = nil, id: UUID = UUID()) {
         self.isSelected = isSelected
