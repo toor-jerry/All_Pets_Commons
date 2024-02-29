@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct UserHasLocationView: View {
+public struct UserHasLocationView: View {
     
-    var body: some View {
+    public init() {}
+    
+    public var body: some View {
         VStack {
             Spacer()
             Text(String.MsgNoLocalization)
